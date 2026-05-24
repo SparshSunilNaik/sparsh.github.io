@@ -1,0 +1,28 @@
+{
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next build",
+    "start": "next start",
+    "lint": "tsc --noEmit",
+    "dev:clean": "powershell -ExecutionPolicy Bypass -File scripts/clean-dev.ps1",
+    "dev:fresh": "npm run dev:clean && next dev"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "tailwindcss": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "typescript": "latest",
+    "vitest": "^4.1.6"
+  },
+  "overrides": {
+    "postcss": "^8.5.10"
+  }
+}
