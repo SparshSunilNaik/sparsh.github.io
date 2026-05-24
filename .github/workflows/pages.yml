@@ -35,6 +35,9 @@ jobs:
           NEXT_PUBLIC_RESUME_URL: "https://drive.google.com/file/d/1dQ53elmsHMWTLve4BrA4KNFZOZWW7K4l/view?usp=drive_link"
         run: npm run build
 
+      - name: Disable Jekyll
+        run: touch out/.nojekyll
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
